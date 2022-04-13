@@ -4,7 +4,7 @@
   <head>
     <title>Mediated Media</title>
     <meta property="og:title" content="Mediated Media" />
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -42,6 +42,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     <div>
       <link href="./index.css" rel="stylesheet" />
 
