@@ -18,7 +18,7 @@ collections:
   - name: "main"
     label: "Main"
     folder: "/"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
