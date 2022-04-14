@@ -204,7 +204,7 @@
   top: 306px;
   left: 371px;
   color: #f9f7f7;
-  z-index: 2;
+  z-index: 49;
   position: absolute;
   font-size: 38px;
   font-style: italic;
@@ -214,7 +214,7 @@
   left: 290px;
   color: #f3f0f0;
   padding: 18px;
-  z-index: 100;
+  z-index: 50;
   position: absolute;
   font-size: 70px;
   align-self: center;
